@@ -13,7 +13,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color:#ece7e7c5;
+    background: linear-gradient(135deg, #ece7e7c5, #b3c6c9, #4a6fa5);
 }
 
 #container {
@@ -27,6 +27,7 @@ body {
     height: 32rem;
     border-radius: 100%;
     border: .3rem solid #f8fafc;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 #calculator {
@@ -35,8 +36,9 @@ body {
     gap: 2rem;
     padding: 2rem;
     color: #f8fafc;
-    background-color: #262626;
+    background: linear-gradient(135deg, #262626, #3f3f46);
     border-radius: .5rem;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 #form {
@@ -75,6 +77,7 @@ body {
     padding: 0.3rem;
     border-radius: .3rem;
     margin-top: .3rem;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .input-field span,  
@@ -107,11 +110,17 @@ body {
     font-size: 1.25rem;
     font-weight: bold;
     color: #f8fafc;
-    background-color:  #319be2cc;
+    background: linear-gradient(135deg, #319be2cc, #0a6fa5);
     padding: 0.5rem 0;
     border-radius: .3rem;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#calculate:hover {
+    background: linear-gradient(135deg, #0a6fa5, #319be2cc);
 }
 
 #result {
